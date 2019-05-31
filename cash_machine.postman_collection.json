@@ -1,0 +1,509 @@
+{
+	"info": {
+		"_postman_id": "00f1358e-eac6-49ca-8bb8-1a09cfea1d58",
+		"name": "Cash Machine",
+		"description": "Postman collection for cash machine",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "User",
+			"item": [
+				{
+					"name": "Accounts",
+					"item": [
+						{
+							"name": "Operations",
+							"item": [
+								{
+									"name": "127.0.0.1:8585/api/account/withdraw/1",
+									"request": {
+										"auth": {
+											"type": "bearer",
+											"bearer": [
+												{
+													"key": "token",
+													"value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJSUzI1NiIsImp0aSI6ImQ2YmJkZDYyNmY2NDAzYzM5ZTNlZjQzZmNmOTU0NThlZTc4MTI2MDkyMGFhZTRlYTJkZmY4NzA3N2RjMTNjZjVlOTU1ZWZlN2YxYTQ1ZGFmIn0.eyJhdWQiOiI1IiwianRpIjoiZDZiYmRkNjI2ZjY0MDNjMzllM2VmNDNmY2Y5NTQ1OGVlNzgxMjYwOTIwYWFlNGVhMmRmZjg3MDc3ZGMxM2NmNWU5NTVlZmU3ZjFhNDVkYWYiLCJpYXQiOjE1NTkxODk2MzAsIm5iZiI6MTU1OTE4OTYzMCwiZXhwIjoxNTkwODEyMDMwLCJzdWIiOiIxIiwic2NvcGVzIjpbXX0.P8HSa5AiQC3Lqids3l_Y8WydY2LHBhGomtXSskloLeLlWpCHVrAmejs9gA02Sc2UodzJGADa3sCvedv1bMujEAzXKJ0dFQZhspL78_cMMORGo_cIvmRxxSBTyiPSHDMGENq3SZPHgtpn7hOAhh922BUw59Im-zIlnufDpzWa1JxTtG6B7tFulFshOKGDU9NU1oi9yKartgiZrYQ_IxlGOq87gF7tKfcLgqIg8GioBC1w1g0VxGsHSTlQ_RgZuT7XErHpPCjiD7m7QkIeefSsXgntaMjlBIR3yujcsMYJAPtKUsHhBK7TnttB4AuO-O30_Tliy_s_6gqIriPoEPcULb1SjjNgX_7-wZHvxEysBR4AKQMyVBAeGnMrQTxYDYmJBnIkpdU7n8idwoHK5o0pqA4dY-kq1eaDA_E5--mZcPrl_bvPzWiUTaNqcmIq-u7qrYZxK8xXZBFQ8sMLpm2DpBOyletDUiK0Vyfhy9tI5C7Fx72ctzIfoKaLpXuMiinqaa3qUXCX5GUTHFc3RQ17ilu_fkZ4taDScsO8fPN8gy6xPlMOgVyxttWSKfRoss2ahDgdjpEh4iyCN90U1Zkal038fhwTRMxVlH_2K5QyyTp6fPxVfgzK7CxIo0aTHSin142Uk0hHZGshNTHjp-P43sX3QvkUiGQ-UjBwMMGPqSM",
+													"type": "string"
+												}
+											]
+										},
+										"method": "POST",
+										"header": [
+											{
+												"key": "Content-Type",
+												"name": "Content-Type",
+												"value": "application/json",
+												"type": "text"
+											}
+										],
+										"body": {
+											"mode": "raw",
+											"raw": "{\n\t\"amount\": 155,\n\t\"description\": \"Prueba\"\n}"
+										},
+										"url": {
+											"raw": "127.0.0.1:8585/api/account/withdraw/1",
+											"host": [
+												"127",
+												"0",
+												"0",
+												"1"
+											],
+											"port": "8585",
+											"path": [
+												"api",
+												"account",
+												"withdraw",
+												"1"
+											]
+										},
+										"description": "Create a new withdrawal"
+									},
+									"response": []
+								},
+								{
+									"name": "127.0.0.1:8585/api/account/deposit/2",
+									"request": {
+										"auth": {
+											"type": "bearer",
+											"bearer": [
+												{
+													"key": "token",
+													"value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJSUzI1NiIsImp0aSI6ImQ2YmJkZDYyNmY2NDAzYzM5ZTNlZjQzZmNmOTU0NThlZTc4MTI2MDkyMGFhZTRlYTJkZmY4NzA3N2RjMTNjZjVlOTU1ZWZlN2YxYTQ1ZGFmIn0.eyJhdWQiOiI1IiwianRpIjoiZDZiYmRkNjI2ZjY0MDNjMzllM2VmNDNmY2Y5NTQ1OGVlNzgxMjYwOTIwYWFlNGVhMmRmZjg3MDc3ZGMxM2NmNWU5NTVlZmU3ZjFhNDVkYWYiLCJpYXQiOjE1NTkxODk2MzAsIm5iZiI6MTU1OTE4OTYzMCwiZXhwIjoxNTkwODEyMDMwLCJzdWIiOiIxIiwic2NvcGVzIjpbXX0.P8HSa5AiQC3Lqids3l_Y8WydY2LHBhGomtXSskloLeLlWpCHVrAmejs9gA02Sc2UodzJGADa3sCvedv1bMujEAzXKJ0dFQZhspL78_cMMORGo_cIvmRxxSBTyiPSHDMGENq3SZPHgtpn7hOAhh922BUw59Im-zIlnufDpzWa1JxTtG6B7tFulFshOKGDU9NU1oi9yKartgiZrYQ_IxlGOq87gF7tKfcLgqIg8GioBC1w1g0VxGsHSTlQ_RgZuT7XErHpPCjiD7m7QkIeefSsXgntaMjlBIR3yujcsMYJAPtKUsHhBK7TnttB4AuO-O30_Tliy_s_6gqIriPoEPcULb1SjjNgX_7-wZHvxEysBR4AKQMyVBAeGnMrQTxYDYmJBnIkpdU7n8idwoHK5o0pqA4dY-kq1eaDA_E5--mZcPrl_bvPzWiUTaNqcmIq-u7qrYZxK8xXZBFQ8sMLpm2DpBOyletDUiK0Vyfhy9tI5C7Fx72ctzIfoKaLpXuMiinqaa3qUXCX5GUTHFc3RQ17ilu_fkZ4taDScsO8fPN8gy6xPlMOgVyxttWSKfRoss2ahDgdjpEh4iyCN90U1Zkal038fhwTRMxVlH_2K5QyyTp6fPxVfgzK7CxIo0aTHSin142Uk0hHZGshNTHjp-P43sX3QvkUiGQ-UjBwMMGPqSM",
+													"type": "string"
+												}
+											]
+										},
+										"method": "POST",
+										"header": [
+											{
+												"key": "Content-Type",
+												"name": "Content-Type",
+												"value": "application/json",
+												"type": "text"
+											}
+										],
+										"body": {
+											"mode": "raw",
+											"raw": "{\n\t\"source\": \"credit_payment\",\n\t\"operation_date\": \"2019-05-29\",\n\t\"liquidation_date\": \"2019-05-29\",\n\t\"description\": \"Random description\",\n\t\"amount\": 1500\n}"
+										},
+										"url": {
+											"raw": "127.0.0.1:8585/api/account/deposit/2",
+											"host": [
+												"127",
+												"0",
+												"0",
+												"1"
+											],
+											"port": "8585",
+											"path": [
+												"api",
+												"account",
+												"deposit",
+												"2"
+											]
+										},
+										"description": "Create a new deposit"
+									},
+									"response": []
+								}
+							],
+							"_postman_isSubFolder": true
+						},
+						{
+							"name": "127.0.0.1:8585/api/me/accounts",
+							"request": {
+								"auth": {
+									"type": "bearer",
+									"bearer": [
+										{
+											"key": "token",
+											"value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJSUzI1NiIsImp0aSI6ImVjNWQxNGNkZGI5MDAxMzkyMmY5YTExZmM0NThjNjQyZWQ2NGMxYjA0NGVjZDc4NjBiNDhjMTY2NDBlYWI3NjgxNGYyMGRiYThlN2EwZjcxIn0.eyJhdWQiOiIzIiwianRpIjoiZWM1ZDE0Y2RkYjkwMDEzOTIyZjlhMTFmYzQ1OGM2NDJlZDY0YzFiMDQ0ZWNkNzg2MGI0OGMxNjY0MGVhYjc2ODE0ZjIwZGJhOGU3YTBmNzEiLCJpYXQiOjE1NTkxODQ0MDcsIm5iZiI6MTU1OTE4NDQwNywiZXhwIjoxNTkwODA2ODA3LCJzdWIiOiI0Iiwic2NvcGVzIjpbXX0.aw-_0fUgsrlYN5seS5tXX8x3LWC2N3OIudP4QBd_CzmD_dVcCu7mzuO0Wsmv5PTkU2Z13k2kY311O06MUu_MMuQnhZMg8-MgNbHDDrdTXkS0knjm3w0SI_blYkf8zym1ZTQiVjTx3Ac8RQFF-_bj4JinPS8y72WT0A01hyRh5m0AtKVSn_3HIJBpwbgiCd_DT9aNAsDFjfRYFXjM8_-bwGoxhwmnXbF6I86KoTUaXlAvm2qLTSViVp3ptF-T16u0xnZ-digfxn43g0sXkt7qe1uLZj-A5XxbSfGaFFAB8iXsAUzTrCt8oCVzITFmtAeMNZ18-o09mKMQvGB2WBisy3xGPQL3dDz6vlYvnQqZc-P5qcELXtLep3KpTQ9mf1-3-c70R-SXnFbfQrKwbDiOTXP9Aj_CZuttsrJK5oiNia4IArqXHz6qS_hGQac0fCZ_u-kEjaaFgSqz8KqzkZkzyeV8t4getPUdKKNIWa4Dnnw0spPGAKoMIueH7US9Lj0rpLjA5dKxYUDfQM6Rm9CEgmF4CYvtOB4vSnLLGp1xVFTPpmAIRTqYsePa-mRAsaDOP-8XXout--VtEJkoZfxI15tQ-Koe367N_G8USImE-hE971nuId3iMuu0Jwxai3TDo_TvCWwGHxkOkyPZJvLHq7z7NHCy62lpFn0WFq2sz_w",
+											"type": "string"
+										}
+									]
+								},
+								"method": "POST",
+								"header": [
+									{
+										"key": "Content-Type",
+										"name": "Content-Type",
+										"value": "application/json",
+										"type": "text"
+									}
+								],
+								"body": {
+									"mode": "raw",
+									"raw": "{\n\t\"account_type\": \"debit\",\n\t\"alias\": \"Fancy Bank\"\n}"
+								},
+								"url": {
+									"raw": "127.0.0.1:8585/api/me/accounts",
+									"host": [
+										"127",
+										"0",
+										"0",
+										"1"
+									],
+									"port": "8585",
+									"path": [
+										"api",
+										"me",
+										"accounts"
+									]
+								},
+								"description": "Create a new user virtual wallet"
+							},
+							"response": []
+						},
+						{
+							"name": "127.0.0.1:8585/api/me/accounts",
+							"request": {
+								"auth": {
+									"type": "bearer",
+									"bearer": [
+										{
+											"key": "token",
+											"value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJSUzI1NiIsImp0aSI6ImVjNWQxNGNkZGI5MDAxMzkyMmY5YTExZmM0NThjNjQyZWQ2NGMxYjA0NGVjZDc4NjBiNDhjMTY2NDBlYWI3NjgxNGYyMGRiYThlN2EwZjcxIn0.eyJhdWQiOiIzIiwianRpIjoiZWM1ZDE0Y2RkYjkwMDEzOTIyZjlhMTFmYzQ1OGM2NDJlZDY0YzFiMDQ0ZWNkNzg2MGI0OGMxNjY0MGVhYjc2ODE0ZjIwZGJhOGU3YTBmNzEiLCJpYXQiOjE1NTkxODQ0MDcsIm5iZiI6MTU1OTE4NDQwNywiZXhwIjoxNTkwODA2ODA3LCJzdWIiOiI0Iiwic2NvcGVzIjpbXX0.aw-_0fUgsrlYN5seS5tXX8x3LWC2N3OIudP4QBd_CzmD_dVcCu7mzuO0Wsmv5PTkU2Z13k2kY311O06MUu_MMuQnhZMg8-MgNbHDDrdTXkS0knjm3w0SI_blYkf8zym1ZTQiVjTx3Ac8RQFF-_bj4JinPS8y72WT0A01hyRh5m0AtKVSn_3HIJBpwbgiCd_DT9aNAsDFjfRYFXjM8_-bwGoxhwmnXbF6I86KoTUaXlAvm2qLTSViVp3ptF-T16u0xnZ-digfxn43g0sXkt7qe1uLZj-A5XxbSfGaFFAB8iXsAUzTrCt8oCVzITFmtAeMNZ18-o09mKMQvGB2WBisy3xGPQL3dDz6vlYvnQqZc-P5qcELXtLep3KpTQ9mf1-3-c70R-SXnFbfQrKwbDiOTXP9Aj_CZuttsrJK5oiNia4IArqXHz6qS_hGQac0fCZ_u-kEjaaFgSqz8KqzkZkzyeV8t4getPUdKKNIWa4Dnnw0spPGAKoMIueH7US9Lj0rpLjA5dKxYUDfQM6Rm9CEgmF4CYvtOB4vSnLLGp1xVFTPpmAIRTqYsePa-mRAsaDOP-8XXout--VtEJkoZfxI15tQ-Koe367N_G8USImE-hE971nuId3iMuu0Jwxai3TDo_TvCWwGHxkOkyPZJvLHq7z7NHCy62lpFn0WFq2sz_w",
+											"type": "string"
+										}
+									]
+								},
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "127.0.0.1:8585/api/me/accounts",
+									"host": [
+										"127",
+										"0",
+										"0",
+										"1"
+									],
+									"port": "8585",
+									"path": [
+										"api",
+										"me",
+										"accounts"
+									]
+								},
+								"description": "Get list of virtual wallets with current balance"
+							},
+							"response": []
+						},
+						{
+							"name": "127.0.0.1:8585/api/me/accounts/6",
+							"request": {
+								"auth": {
+									"type": "bearer",
+									"bearer": [
+										{
+											"key": "token",
+											"value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJSUzI1NiIsImp0aSI6ImVjNWQxNGNkZGI5MDAxMzkyMmY5YTExZmM0NThjNjQyZWQ2NGMxYjA0NGVjZDc4NjBiNDhjMTY2NDBlYWI3NjgxNGYyMGRiYThlN2EwZjcxIn0.eyJhdWQiOiIzIiwianRpIjoiZWM1ZDE0Y2RkYjkwMDEzOTIyZjlhMTFmYzQ1OGM2NDJlZDY0YzFiMDQ0ZWNkNzg2MGI0OGMxNjY0MGVhYjc2ODE0ZjIwZGJhOGU3YTBmNzEiLCJpYXQiOjE1NTkxODQ0MDcsIm5iZiI6MTU1OTE4NDQwNywiZXhwIjoxNTkwODA2ODA3LCJzdWIiOiI0Iiwic2NvcGVzIjpbXX0.aw-_0fUgsrlYN5seS5tXX8x3LWC2N3OIudP4QBd_CzmD_dVcCu7mzuO0Wsmv5PTkU2Z13k2kY311O06MUu_MMuQnhZMg8-MgNbHDDrdTXkS0knjm3w0SI_blYkf8zym1ZTQiVjTx3Ac8RQFF-_bj4JinPS8y72WT0A01hyRh5m0AtKVSn_3HIJBpwbgiCd_DT9aNAsDFjfRYFXjM8_-bwGoxhwmnXbF6I86KoTUaXlAvm2qLTSViVp3ptF-T16u0xnZ-digfxn43g0sXkt7qe1uLZj-A5XxbSfGaFFAB8iXsAUzTrCt8oCVzITFmtAeMNZ18-o09mKMQvGB2WBisy3xGPQL3dDz6vlYvnQqZc-P5qcELXtLep3KpTQ9mf1-3-c70R-SXnFbfQrKwbDiOTXP9Aj_CZuttsrJK5oiNia4IArqXHz6qS_hGQac0fCZ_u-kEjaaFgSqz8KqzkZkzyeV8t4getPUdKKNIWa4Dnnw0spPGAKoMIueH7US9Lj0rpLjA5dKxYUDfQM6Rm9CEgmF4CYvtOB4vSnLLGp1xVFTPpmAIRTqYsePa-mRAsaDOP-8XXout--VtEJkoZfxI15tQ-Koe367N_G8USImE-hE971nuId3iMuu0Jwxai3TDo_TvCWwGHxkOkyPZJvLHq7z7NHCy62lpFn0WFq2sz_w",
+											"type": "string"
+										}
+									]
+								},
+								"method": "PUT",
+								"header": [
+									{
+										"key": "Content-Type",
+										"name": "Content-Type",
+										"value": "application/json",
+										"type": "text"
+									}
+								],
+								"body": {
+									"mode": "raw",
+									"raw": "{\n\t\"alias\": \"Other Fancy Bank Name\"\n}"
+								},
+								"url": {
+									"raw": "127.0.0.1:8585/api/me/accounts/6",
+									"host": [
+										"127",
+										"0",
+										"0",
+										"1"
+									],
+									"port": "8585",
+									"path": [
+										"api",
+										"me",
+										"accounts",
+										"6"
+									]
+								},
+								"description": "Update new user virtual wallet"
+							},
+							"response": []
+						},
+						{
+							"name": "127.0.0.1:8585/api/me/accounts/6",
+							"request": {
+								"auth": {
+									"type": "bearer",
+									"bearer": [
+										{
+											"key": "token",
+											"value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJSUzI1NiIsImp0aSI6ImVjNWQxNGNkZGI5MDAxMzkyMmY5YTExZmM0NThjNjQyZWQ2NGMxYjA0NGVjZDc4NjBiNDhjMTY2NDBlYWI3NjgxNGYyMGRiYThlN2EwZjcxIn0.eyJhdWQiOiIzIiwianRpIjoiZWM1ZDE0Y2RkYjkwMDEzOTIyZjlhMTFmYzQ1OGM2NDJlZDY0YzFiMDQ0ZWNkNzg2MGI0OGMxNjY0MGVhYjc2ODE0ZjIwZGJhOGU3YTBmNzEiLCJpYXQiOjE1NTkxODQ0MDcsIm5iZiI6MTU1OTE4NDQwNywiZXhwIjoxNTkwODA2ODA3LCJzdWIiOiI0Iiwic2NvcGVzIjpbXX0.aw-_0fUgsrlYN5seS5tXX8x3LWC2N3OIudP4QBd_CzmD_dVcCu7mzuO0Wsmv5PTkU2Z13k2kY311O06MUu_MMuQnhZMg8-MgNbHDDrdTXkS0knjm3w0SI_blYkf8zym1ZTQiVjTx3Ac8RQFF-_bj4JinPS8y72WT0A01hyRh5m0AtKVSn_3HIJBpwbgiCd_DT9aNAsDFjfRYFXjM8_-bwGoxhwmnXbF6I86KoTUaXlAvm2qLTSViVp3ptF-T16u0xnZ-digfxn43g0sXkt7qe1uLZj-A5XxbSfGaFFAB8iXsAUzTrCt8oCVzITFmtAeMNZ18-o09mKMQvGB2WBisy3xGPQL3dDz6vlYvnQqZc-P5qcELXtLep3KpTQ9mf1-3-c70R-SXnFbfQrKwbDiOTXP9Aj_CZuttsrJK5oiNia4IArqXHz6qS_hGQac0fCZ_u-kEjaaFgSqz8KqzkZkzyeV8t4getPUdKKNIWa4Dnnw0spPGAKoMIueH7US9Lj0rpLjA5dKxYUDfQM6Rm9CEgmF4CYvtOB4vSnLLGp1xVFTPpmAIRTqYsePa-mRAsaDOP-8XXout--VtEJkoZfxI15tQ-Koe367N_G8USImE-hE971nuId3iMuu0Jwxai3TDo_TvCWwGHxkOkyPZJvLHq7z7NHCy62lpFn0WFq2sz_w",
+											"type": "string"
+										}
+									]
+								},
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "127.0.0.1:8585/api/me/accounts/6",
+									"host": [
+										"127",
+										"0",
+										"0",
+										"1"
+									],
+									"port": "8585",
+									"path": [
+										"api",
+										"me",
+										"accounts",
+										"6"
+									]
+								},
+								"description": "Get info for specific virtual wallet"
+							},
+							"response": []
+						}
+					],
+					"_postman_isSubFolder": true
+				},
+				{
+					"name": "127.0.0.1:8585/api/user/register",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Content-Type",
+								"name": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n\t\"email\": \"random@mail.com\",\n\t\"name\": \"Random User\",\n\t\"password\": \"123porMi\"\n}"
+						},
+						"url": {
+							"raw": "127.0.0.1:8585/api/user/register",
+							"host": [
+								"127",
+								"0",
+								"0",
+								"1"
+							],
+							"port": "8585",
+							"path": [
+								"api",
+								"user",
+								"register"
+							]
+						},
+						"description": "New api user"
+					},
+					"response": []
+				},
+				{
+					"name": "127.0.0.1:8585/api/user/login",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Content-Type",
+								"name": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n\t\"email\": \"random@mail.com\",\n\t\"password\": \"123porMi\"\n}"
+						},
+						"url": {
+							"raw": "127.0.0.1:8585/api/user/login",
+							"host": [
+								"127",
+								"0",
+								"0",
+								"1"
+							],
+							"port": "8585",
+							"path": [
+								"api",
+								"user",
+								"login"
+							]
+						},
+						"description": "New api user login"
+					},
+					"response": []
+				},
+				{
+					"name": "127.0.0.1:8585/api/me",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJSUzI1NiIsImp0aSI6ImVjNWQxNGNkZGI5MDAxMzkyMmY5YTExZmM0NThjNjQyZWQ2NGMxYjA0NGVjZDc4NjBiNDhjMTY2NDBlYWI3NjgxNGYyMGRiYThlN2EwZjcxIn0.eyJhdWQiOiIzIiwianRpIjoiZWM1ZDE0Y2RkYjkwMDEzOTIyZjlhMTFmYzQ1OGM2NDJlZDY0YzFiMDQ0ZWNkNzg2MGI0OGMxNjY0MGVhYjc2ODE0ZjIwZGJhOGU3YTBmNzEiLCJpYXQiOjE1NTkxODQ0MDcsIm5iZiI6MTU1OTE4NDQwNywiZXhwIjoxNTkwODA2ODA3LCJzdWIiOiI0Iiwic2NvcGVzIjpbXX0.aw-_0fUgsrlYN5seS5tXX8x3LWC2N3OIudP4QBd_CzmD_dVcCu7mzuO0Wsmv5PTkU2Z13k2kY311O06MUu_MMuQnhZMg8-MgNbHDDrdTXkS0knjm3w0SI_blYkf8zym1ZTQiVjTx3Ac8RQFF-_bj4JinPS8y72WT0A01hyRh5m0AtKVSn_3HIJBpwbgiCd_DT9aNAsDFjfRYFXjM8_-bwGoxhwmnXbF6I86KoTUaXlAvm2qLTSViVp3ptF-T16u0xnZ-digfxn43g0sXkt7qe1uLZj-A5XxbSfGaFFAB8iXsAUzTrCt8oCVzITFmtAeMNZ18-o09mKMQvGB2WBisy3xGPQL3dDz6vlYvnQqZc-P5qcELXtLep3KpTQ9mf1-3-c70R-SXnFbfQrKwbDiOTXP9Aj_CZuttsrJK5oiNia4IArqXHz6qS_hGQac0fCZ_u-kEjaaFgSqz8KqzkZkzyeV8t4getPUdKKNIWa4Dnnw0spPGAKoMIueH7US9Lj0rpLjA5dKxYUDfQM6Rm9CEgmF4CYvtOB4vSnLLGp1xVFTPpmAIRTqYsePa-mRAsaDOP-8XXout--VtEJkoZfxI15tQ-Koe367N_G8USImE-hE971nuId3iMuu0Jwxai3TDo_TvCWwGHxkOkyPZJvLHq7z7NHCy62lpFn0WFq2sz_w",
+									"type": "string"
+								}
+							]
+						},
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "127.0.0.1:8585/api/me",
+							"host": [
+								"127",
+								"0",
+								"0",
+								"1"
+							],
+							"port": "8585",
+							"path": [
+								"api",
+								"me"
+							]
+						},
+						"description": "Get user details"
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Cash Machine Service",
+			"item": [
+				{
+					"name": "127.0.0.1:8585/api/cash-machine/pay",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "Token ZAtBTRSkBsDtCNdyBrt7jDv684HNFm",
+								"type": "text"
+							},
+							{
+								"key": "Content-Type",
+								"name": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n\t\"account_id\": 2,\n\t\"amount\": 10\n}"
+						},
+						"url": {
+							"raw": "127.0.0.1:8585/api/cash-machine/pay",
+							"host": [
+								"127",
+								"0",
+								"0",
+								"1"
+							],
+							"port": "8585",
+							"path": [
+								"api",
+								"cash-machine",
+								"pay"
+							]
+						},
+						"description": "Create a charge on your credit account"
+					},
+					"response": []
+				},
+				{
+					"name": "127.0.0.1:8585/api/cash-machine/deposit/rejected",
+					"request": {
+						"method": "PUT",
+						"header": [
+							{
+								"key": "Content-Type",
+								"name": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							},
+							{
+								"key": "Authorization",
+								"value": "Token ZAtBTRSkBsDtCNdyBrt7jDv684HNFm",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n\t\"id\": 10\n}"
+						},
+						"url": {
+							"raw": "127.0.0.1:8585/api/cash-machine/charge/cancel",
+							"host": [
+								"127",
+								"0",
+								"0",
+								"1"
+							],
+							"port": "8585",
+							"path": [
+								"api",
+								"cash-machine",
+								"charge",
+								"cancel"
+							]
+						},
+						"description": "Update deposit state.\nValid state path: approved and rejected"
+					},
+					"response": []
+				},
+				{
+					"name": "127.0.0.1:8585/api/cash-machine/deposit/rejected",
+					"request": {
+						"method": "PUT",
+						"header": [
+							{
+								"key": "Content-Type",
+								"name": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							},
+							{
+								"key": "Authorization",
+								"value": "Token ZAtBTRSkBsDtCNdyBrt7jDv684HNFm",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n\t\"id\": 19\n}"
+						},
+						"url": {
+							"raw": "127.0.0.1:8585/api/cash-machine/deposit/rejected",
+							"host": [
+								"127",
+								"0",
+								"0",
+								"1"
+							],
+							"port": "8585",
+							"path": [
+								"api",
+								"cash-machine",
+								"deposit",
+								"rejected"
+							]
+						},
+						"description": "Updated deposit state"
+					},
+					"response": []
+				}
+			]
+		}
+	]
+}
